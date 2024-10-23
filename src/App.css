@@ -1,0 +1,69 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes rotate-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-counterclockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg); /* Counterclockwise rotation */
+  }
+}
+
+.logo {
+  height: 6rem;
+  padding: 1rem;
+}
+
+.logo.react {
+  animation: rotate-clockwise 5s linear infinite; /* Rotate React logo clockwise */
+}
+
+.logo.vite {
+  animation: rotate-counterclockwise 5s linear infinite; /* Rotate Vite logo counterclockwise */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react {
+    animation: rotate-clockwise 1s linear infinite;
+  }
+
+  .logo.vite {
+    animation: rotate-counterclockwise 1s linear infinite;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888
